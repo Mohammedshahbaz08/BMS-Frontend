@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
    --black:#222831;
    --liteblack: #393E46;
@@ -11,7 +10,8 @@
    --litegray:#EEEEEE;
 }
 
-.carr{
+         /* Login styling */
+.login-div{
     display: flex;
      justify-content: space-around;
     width: 100vw;
@@ -20,17 +20,15 @@
 
  #bms{
   font-weight: bolder;
-  font-size: larger;
+  font-size: 20px;
   color: var(--litegray);
  }
 
  .left-div{
    display: flex;
    flex-direction: column;
-     /* border-right:solid var(--black); */
-    background: var(--liteblack);
-    /* padding:90px; */
-    width: 50%;
+   background: var(--liteblack);
+   width: 50%;
    
  }
  
@@ -39,24 +37,23 @@
    flex-direction: column;
    align-items: center;
    color: var(--litegray);
-   /* margin-left: 10px;
-   margin-right: 10px;
-   margin-bottom: 10px; */
-   margin-top: 25%;
+   margin-top: 20%;
  }
 
- .welcome-head{
+ .welcome-head2{
    color: var(--litegray);
    
  }
 
-
-
+ .welcome-head6{
+   color: var(--litegray);
+   font-size: 15px;
+   
+ }
  #login-btn{
-      margin: 10px 0;
+     margin: 10px 0;
      background: var(--black);
  }
-
  #google-btn{
       margin-bottom: 10px;
       max-width: 250px;
@@ -66,15 +63,75 @@
       background: var(--black);           
  }
 
+ .input-fields{
+   color: var(--litegray);
+ }
+
 .forgot-link{
    align-items: start;
 }
  .right-div{
-    display: flex;
-    justify-content: center;
-     align-items: center;
-     /* border-left:solid var(--skyblue); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color:var(--black);
       width: 50%;
  }
  
+
+      /* media screening */
+  
+ @media screen and (max-width: 320px){
+   .login-div{
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .left-div{
+      width: 100%;
+      height: 100%;
+   }
+
+   .right-div{
+      width: 100%;
+      height: 100%;
+   }
+   #sign-link{
+      margin-bottom: 10px;
+   }
+ }     
+
+ @media screen and (max-width: 600px ), (max-width:460px){ 
+   #bms{
+      font-size: 15px;
+   }
+ }
+ @media screen and (max-width: 357px ){ 
+   #bms{
+      font-size: 6px;
+   }
+ }
+ @media screen and (max-width: 490px ){ 
+   #bms{
+      font-size: 12px;
+   }
+ }
+ @media screen and (max-width: 537px ){ 
+   .welcome-head6{
+      font-size: 12px;
+   }
+ }
+ @media screen and (max-width: 431px ){ 
+   .welcome-head6{
+      font-size: 11px;
+   }
+ }
+ @media screen and (max-width: 400px ){ 
+   .welcome-head6{
+      font-size: 8px;
+   }
+   .welcome-head2{
+      font-size: 15px;
+   }
+ }
+            /* End of Login  */
