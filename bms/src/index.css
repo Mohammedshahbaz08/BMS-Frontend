@@ -42,12 +42,15 @@
 
  .welcome-head2{
    color: var(--litegray);
+   margin: 8px;
    
  }
 
  .welcome-head6{
    color: var(--litegray);
    font-size: 15px;
+   margin: 8px;
+
    
  }
  #login-btn{
@@ -77,6 +80,7 @@
       background-color:var(--black);
       width: 50%;
  }
+  
  
 
       /* media screening */

@@ -15,8 +15,8 @@ function Login(props) {
         <div className=" left-div">
           <h5 id="bms">&bull; Billing Management System</h5>
           <form className="main-form" onSubmit={handleSubmit(onSubmit)}>
-            <h2 className="welcome-head2">Welcome Back</h2>
-            <p className="welcome-head6">
+            <h1 className="welcome-head2">Welcome Back</h1>
+            <p className="welcome-head6" >
               Welcome back! Please enter your details
             </p>
             <br></br>
@@ -34,20 +34,21 @@ function Login(props) {
               type="password"
               {...register("Password", { required: true })}
             />
-            <Link id="forgot-link" href="#" color="inherit" underline="hover">
+            <Link  padding={1} paddingLeft={15} id="forgot-link" href="#" color="inherit" underline="hover">
               {"Forgot password"}
             </Link>
             <Button
               id="login-btn"
+              // size="small"
               type="submit"
               onClick={toastpop}
               variant="contained"
-              // style={{
-              //   maxWidth: "30px",
-              //   maxHeight: "80px",
-              //   minWidth: "206px",
-              //   minHeight: "30px",
-              // }}
+              style={{
+                maxWidth: "30px",
+                maxHeight: "80px",
+                minWidth: "206px",
+                minHeight: "30px",
+              }}
             >
               login
             </Button>
@@ -58,7 +59,7 @@ function Login(props) {
               theme="light"
               limit={1}
             />
-            <Button id="google-btn" variant="contained">
+            <Button   id="google-btn" variant="contained">
               login with Google
             </Button>
             <h6>
