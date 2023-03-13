@@ -21,13 +21,13 @@
  #bms{
   font-weight: bolder;
   font-size: 20px;
-  color: var(--litegray);
+  color: var( --black);
  }
 
  .left-div{
    display: flex;
    flex-direction: column;
-   background: var(--liteblack);
+   background: var(--litegray);
    width: 50%;
    
  }
@@ -36,18 +36,18 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   color: var(--litegray);
+   color: var(--black);
    margin-top: 20%;
  }
 
  .welcome-head2{
-   color: var(--litegray);
+   color: var(--black);
    margin: 8px;
    
  }
 
  .welcome-head6{
-   color: var(--litegray);
+   color: var(--black);
    font-size: 15px;
    margin: 8px;
 
@@ -55,7 +55,7 @@
  }
  #login-btn{
      margin: 10px 0;
-     background: var(--black);
+     background: var(--skyblue);
  }
  #google-btn{
       margin-bottom: 10px;
@@ -63,11 +63,11 @@
       max-height: "80px";
       min-width: "30px";
       min-height: "30px"; 
-      background: var(--black);           
+      background: var(--skyblue);           
  }
 
  .input-fields{
-   color: var(--litegray);
+   color: var(--black);
  }
 
 .forgot-link{
@@ -77,7 +77,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color:var(--black);
+      background-color:var(--skyblue);
       width: 50%;
  }
   

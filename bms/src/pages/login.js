@@ -59,9 +59,9 @@ function Login(props) {
               theme="light"
               limit={1}
             />
-            <Button   id="google-btn" variant="contained">
+            {/* <Button   id="google-btn" variant="contained">
               login with Google
-            </Button>
+            </Button> */}
             <h6>
               dont have an account?{" "}
               <Link
