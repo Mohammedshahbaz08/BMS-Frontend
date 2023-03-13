@@ -7,24 +7,31 @@ import "../index.css";
 function Signup(props) {
   let { register, handleSubmit } = useForm();
   const toastpop = () => {
-    toast("Signup successful");
-  };<>
-  <div className="login-div">
+    toast("login successful");
+  };
+  return (
+    <>
+      <div className="login-div">
         <div className=" left-div">
           <h5 id="bms">&bull; Billing Management System</h5>
-          <form className="main-form" 
-          // onSubmit={handleSubmit(onSubmit)}
-          >
+          <form className="main-form" onSubmit={handleSubmit(onSubmit)}>
             <h1 className="welcome-head2">Welcome Back</h1>
-            <p className="welcome-head6" >
+            <p className="welcome-head6">
               Welcome back! Please enter your details
             </p>
             <br></br>
             <TextField
               required
               className="input-fields"
-              label="UserName"
-              {...register("UserName", { required: true })}
+              label="FirstName"
+              {...register("FirstName", { required: true })}
+            />
+            <br></br>
+            <TextField
+              required
+              className="input-fields"
+              label="LastName"
+              {...register("LastName", { required: true })}
             />
             <br></br>
             <TextField
@@ -34,7 +41,14 @@ function Signup(props) {
               type="password"
               {...register("Password", { required: true })}
             />
-            <Link  padding={1} paddingLeft={15} id="forgot-link" href="#" color="inherit" underline="hover">
+            <Link
+              padding={1}
+              paddingLeft={15}
+              id="forgot-link"
+              href="#"
+              color="inherit"
+              underline="hover"
+            >
               {"Forgot password"}
             </Link>
             <Button
@@ -50,7 +64,7 @@ function Signup(props) {
                 minHeight: "30px",
               }}
             >
-              Signup
+              login
             </Button>
             <ToastContainer
               position="bottom-left"
@@ -59,8 +73,8 @@ function Signup(props) {
               theme="light"
               limit={1}
             />
-            <Button   id="google-btn" variant="contained">
-              Signup with Google
+            <Button id="google-btn" variant="contained">
+              login with Google
             </Button>
             <h6>
               dont have an account?{" "}
@@ -80,7 +94,12 @@ function Signup(props) {
           <h5>logo</h5>
         </div>
       </div>
-  </>;
+    </>
+  );
+}
+
+function onSubmit(values) {
+  console.log(values);
 }
 
 export default Signup;
